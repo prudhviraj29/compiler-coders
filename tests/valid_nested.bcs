@@ -1,0 +1,6 @@
+BcsMain { int x; bool ok;
+  x = 1;
+  while (x < 100) {
+    if (x == 50) { ok = 1 } else { x = x + x * 2 }
+  }
+}

@@ -1,0 +1,1 @@
+BcsMain { int a; while (a < 1 < 2) { a = 1 } }

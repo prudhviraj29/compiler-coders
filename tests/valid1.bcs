@@ -1,0 +1,10 @@
+BcsMain
+{
+    int a; int b; bool flag;
+    a = 5;
+    b = a * 3 + 2;
+    flag = a;
+    if (a <= b) { a = a + 1; b = b * 2 } else { a = 0 };
+    while (a != 20) { a = a + 1 };
+    b = a * b + a * 2 * 3
+}
