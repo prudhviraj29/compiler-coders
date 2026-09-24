@@ -1,0 +1,22 @@
+Instructions to setup stage 1 compiler in a Debian machine
+
+1) Install required tools
+   sudo apt install flex bison gcc
+   
+2) Generate the parser using Bison
+   bison -d bcs24.y
+   
+3) Generate the lexer using Flex
+   flex bcs24.l
+   
+4) Compile the compiler
+   gcc -o bcs24 main.c bcs24.tab.c lex.yy.c
+   
+5) Command to run stage 1 compiler(lexer + parser)
+   ./bcs24 <relative_path_to_input_file>
+   
+6) Test with valid sample program
+   ./bcs24 valid.bcs
+   
+7) Test with invalid sample program
+   ./bcs24 invalid.bcs
